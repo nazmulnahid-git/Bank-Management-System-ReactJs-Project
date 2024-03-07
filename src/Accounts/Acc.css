@@ -1,0 +1,212 @@
+.createAccForm {
+  background-color: #999;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.createAccForm h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.createAccForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.createAccForm input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.createAccForm input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.createAccForm button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.createAccForm button:hover {
+  background-color: #0056b3;
+}
+
+.AccContainer {
+  background-color: #999;
+  width: 240px;
+  height: 100px;
+  margin: 5px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.AccsContainer {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px; 
+  justify-content: space-between;
+  align-items: center;
+}
+.AccContainer h3, .AccContainer p {
+  margin: 0;
+  padding: 5px;
+}
+
+.Section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.leftSection{
+  width: 60%;
+  margin: 0;
+  padding : 0;
+}
+.rightSection {
+  width: 40%;
+}
+.leftSection h1 {
+  background-color:#999;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin : 0;
+  margin-bottom: 5px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.781);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #999;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 50%;
+  height: 500px;
+  overflow: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 25px;
+}
+.transferContainer {
+  background-color: #999;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transferContainer h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.transferContainer label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.transferContainer input[type="text"],
+.transferContainer select {
+  width: calc(100% - 10%);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.transferContainer select {
+  cursor: pointer;
+}
+
+.transferContainer input[type="text"]:focus,
+.transferContainer select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.transferContainer button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.transferContainer button:hover {
+  background-color: #0056b3;
+}
+
+.popup-content h2 {
+  text-align: center;
+}
+.detail {
+  background-color: #777;
+  display: flex;
+  margin-top: 10px;
+}
+.detail h4, p {
+  margin: 5px;
+  padding: 5px;
+}
+.transaction-history h3 {
+  text-align: center;
+}
+.transaction-history {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+}
+table {
+  width: 100%;
+}
+th {
+  background-color: #777;
+  height: 50px;
+}
+tr {
+  background-color: #888;
+  height: fit-content;
+}
