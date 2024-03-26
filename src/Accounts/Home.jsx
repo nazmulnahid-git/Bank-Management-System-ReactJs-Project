@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react';
 import Accounts from './Accounts';
 import CreateAccounts from './CreateAccounts';
 import './Acc.css'
+import Search from './Search';
 
 function Home() {
   
@@ -20,7 +21,7 @@ function Home() {
       accNo: 1001,
       name: "Falak",
       balance: 1000,
-      history: []
+      history: [ ]
     },
     {
       id: 3,
@@ -34,7 +35,6 @@ function Home() {
 
 const addAccount = (newAccount) => {
   setAllAccounts(prevAccounts => [...prevAccounts, newAccount]);
-  console.log(newAccount)
 };
 
 useEffect(() => {
@@ -43,13 +43,24 @@ useEffect(() => {
 
   const prevID = allAccounts.length > 0 ? allAccounts[allAccounts.length - 1].id : 0;
   const prevAccNo = allAccounts.length > 0 ? allAccounts[allAccounts.length - 1].accNo : 0;
-  console.log(prevAccNo, prevID)
+
+  const [src, setSrc] = useState([]);
+
+  const srcFunction = (val) => {
+    const value = allAccounts.filter(account => account.accNo.toString().startsWith(val));
+    setSrc(value);
+  }
+  console.log(src);
 
   return (
     <div className='Section'>
         <div className='leftSection'>
-          <h1> Accounts </h1>
-          <Accounts accounts={allAccounts} />
+          <h1 style = {{display:"flex", justifyContent:"space-between", padding :'0px 10px 10px 10px'}}> 
+          Accounts 
+          <Search pass = {srcFunction}/>
+          </h1>
+          
+          <Accounts accounts={src} />
         </div>
         <div className='rightSection'>
           <CreateAccounts prevID={prevID} prevAccNo={prevAccNo} addAccount={addAccount} />

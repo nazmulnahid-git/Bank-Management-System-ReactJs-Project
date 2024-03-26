@@ -5,7 +5,6 @@ import Transfer from './Others/Transfer'
 import Withdraw from './Others/Withdraw'
 import Accounts from './Accounts/Home'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import './App.css'
 
 function App() {
   const router = createBrowserRouter([

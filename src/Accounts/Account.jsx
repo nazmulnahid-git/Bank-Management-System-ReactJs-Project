@@ -6,7 +6,7 @@ return (
   <div className='AccContainer'>
       <h3>{name}</h3>
       <p>Acc No : {accNo}</p>
-      <p>Cur Balance : {balance}</p>
+      <p>Cur Balance : {balance} BDT</p>
   </div>
 )
 }
